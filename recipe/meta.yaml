@@ -1,4 +1,4 @@
-{% set version = '0.4.0' %}
+{% set version = "0.4.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mlr3filters_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mlr3filters/mlr3filters_{{ version }}.tar.gz
-  sha256: c49046b6f77cf9e83384162514e7aefadcaa182e83e354361b9d70c1282c4316
+  sha256: b1d32e0dc5aec95a452f1ac7c86aa4675242341936e1cac5c9e9fdf1ce32b986
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -51,12 +51,10 @@ test:
 about:
   home: https://mlr3filters.mlr-org.com, https://github.com/mlr-org/mlr3filters
   license: LGPL-3.0-only
-  summary: Extends 'mlr3' with filter methods for feature selection. Besides standalone filter
-    methods built-in methods of any machine-learning algorithm are supported.  Partial
-    scoring of multivariate filter methods is supported.
+  summary: Extends 'mlr3' with filter methods for feature selection. Besides standalone filter methods built-in methods of any machine-learning algorithm are supported.  Partial scoring of multivariate filter methods is supported.
   license_family: LGPL
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3
 
 extra:
   recipe-maintainers:
