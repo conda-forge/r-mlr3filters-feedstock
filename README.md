@@ -1,11 +1,11 @@
-About r-mlr3filters
-===================
+About r-mlr3filters-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mlr3filters-feedstock/blob/main/LICENSE.txt)
 
 Home: https://mlr3filters.mlr-org.com, https://github.com/mlr-org/mlr3filters
 
 Package license: LGPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mlr3filters-feedstock/blob/main/LICENSE.txt)
 
 Summary: Extends 'mlr3' with filter methods for feature selection. Besides standalone filter methods built-in methods of any machine-learning algorithm are supported.  Partial scoring of multivariate filter methods is supported.
 
